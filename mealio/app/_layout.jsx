@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Stack } from 'expo-router';
 import { MD3LightTheme as DefaultTheme, PaperProvider, useTheme } from 'react-native-paper';
+import RecipeDetails from './recipe/[id]';
 
 const theme = {
     ...DefaultTheme,
@@ -19,6 +20,7 @@ export default function RootLayout() {
         <Stack >
             <Stack.Screen name="(tabs)" options={{headerShown: false}}/>
             <Stack.Screen name="+not-found" />
+            
         </Stack>
     </PaperProvider>
     
