@@ -121,6 +121,7 @@ export default function RecipeLibraryPage() {
 const styles = StyleSheet.create({
   container: { 
     flex: 1,
+    backgroundColor: "white",
   },
   gallery: {
     flex: 100,

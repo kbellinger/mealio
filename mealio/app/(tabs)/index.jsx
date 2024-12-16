@@ -36,7 +36,7 @@ export default function HomePage() {
     const fetchcookingFunFact = async () => {
       try {
         const response = await fetch(
-          'https://api.spoonacular.com/food/trivia/random?apiKey=YOUR_API_KEY'
+          'https://api.spoonacular.com/food/trivia/random?apiKey=ad4cab0b765e409c93857e14669b23b0'
         );
         const data = await response.json();
        setCookingFunFact(data.text || 'No fun facts available right now.');
@@ -88,6 +88,7 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       padding: 20,
+      backgroundColor: "white",
       // justifyContent: 'center',
       // alignItems: 'center',
     },

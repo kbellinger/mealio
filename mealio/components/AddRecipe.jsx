@@ -162,7 +162,7 @@ export default function AddRecipe({ onSubmit }) {
         <View>
             <Text variant='bodySmall' style={styles.requiredText}>* = Required</Text>
         <TextInput
-          label="Title"
+          label="Title *"
           mode="outlined"
           placeholder="Teriyaki Chicken"
           onChangeText={(value) => handleFormChange('title', value)}
@@ -187,7 +187,7 @@ export default function AddRecipe({ onSubmit }) {
           right={<TextInput.Affix text="minutes" />}
         />
         <TextInput
-          label="Servings"
+          label="Servings *"
           mode="outlined"
           keyboardType="numeric"
           placeholder="6"
@@ -195,7 +195,7 @@ export default function AddRecipe({ onSubmit }) {
           value={formData.servings}
         />
         <TextInput
-          label="Description"
+          label="Description *"
           mode="outlined"
           multiline={true}
           placeholder="A delicious easy dinner..."
